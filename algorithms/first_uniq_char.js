@@ -2,7 +2,7 @@
 // https://leetcode.com/problems/first-unique-character-in-a-string/
 
 
-var firstUniqChar = function(s) {
+const firstUniqChar = function(s) {
   const map = new Map()
 
   let index = -1
@@ -28,7 +28,7 @@ var firstUniqChar = function(s) {
 }
 
   return index
-};
+}
 
 
 console.log(firstUniqChar("aadadaad")) // -1

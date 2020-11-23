@@ -6,7 +6,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var singleNumber_f = function(nums) {
+const singleNumber_f = function(nums) {
   let uniqueNumber = 0
   let countMap = new Map()
 
@@ -22,20 +22,20 @@ var singleNumber_f = function(nums) {
   })
 
   return uniqueNumber
-};
+}
 
 // Better solution
 /**
  * @param {number[]} nums
  * @return {number}
  */
-var singleNumber = function(nums) {
+const singleNumber = function(nums) {
   let uniqueNumber = 0
 
   nums.forEach(n => uniqueNumber ^= n )
 
   return uniqueNumber
-};
+}
 
 
 console.log(singleNumber([2,2,1])) // 1

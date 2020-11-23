@@ -1,11 +1,12 @@
 
 // https://leetcode.com/problems/to-lower-case/
 
+
 /**
  * @param {string} str
  * @return {string}
  */
-var toLowerCase = function(str) {
+const toLowerCase = function(str) {
   let result = ''
   for(let i = 0; i < str.length; i++) {
     const code = str.charCodeAt(i)
@@ -18,7 +19,7 @@ var toLowerCase = function(str) {
   }
     
   return result
-};
+}
 
 
 console.log(toLowerCase('Hello')) // hello

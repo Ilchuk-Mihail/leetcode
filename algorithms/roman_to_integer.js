@@ -12,7 +12,7 @@ const conversionMap = new Map([
   [ 'M', 1000 ]
 ])
 
-var romanToInt = function(s) {
+const romanToInt = function(s) {
   let romanSum = 0
 
   for (let i = 0; i < s.length; i++) {

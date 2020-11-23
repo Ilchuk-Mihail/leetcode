@@ -6,7 +6,7 @@
  * @param {string} s
  * @return {string}
  */
-var frequencySort = function(s) {
+const frequencySort = function(s) {
   const frequencyMap = new Map()
 
   for (let i = 0; i < s.length; i++) {
@@ -28,7 +28,7 @@ var frequencySort = function(s) {
   arr.sort((a, b) => a.value < b.value ? 1 : -1)
 
   return arr.map(x => x.chr).join('')
-};
+}
 
 
 console.log(frequencySort('')) // ''
