@@ -31,7 +31,7 @@ const missingNumber_f = function(nums) {
  * @param {number[]} nums
  * @return {number}
  */
-const missingNumber = function(nums) {
+const missingNumber_s = function(nums) {
   let missing = nums.length
 
   for (let i = 0; i < nums.length; i++) {
@@ -41,6 +41,22 @@ const missingNumber = function(nums) {
   return missing
 }
 
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+const missingNumber = function(nums) {
+  let totalSum = nums.length
+  let arrSum = 0
+  for (let i = 0; i < nums.length; i++) {
+    totalSum += i
+    arrSum += nums[i]
+  }
+
+  return totalSum - arrSum
+}
+
 console.log(missingNumber([3,0,1])) // 2
 console.log(missingNumber([0,1])) // 2
 console.log(missingNumber([9,6,4,2,3,5,7,0,1])) // 8
+console.log(missingNumber([0])) // 1
